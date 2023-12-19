@@ -68,3 +68,60 @@ chmod +x script_name.sh
 Replace script_name.sh with the filename of each script.
 
 Note: For user-related scripts, use sudo or run with appropriate permissions for successful execution.
+
+
+5. advance level
+File Information Bash Script README
+This Bash script, file_info.sh, is designed to provide information about a specified file in a Linux environment.
+
+Usage:
+bash
+Copy code
+./file_info.sh [options] <file-name>
+Options:
+--size or -s: Displays the size of the file in bytes.
+--permissions or -p: Shows the file permissions.
+--owner or -o: Displays the owner of the file.
+--last-modified or -m: Shows the last modification time of the file.
+Example Usage:
+Display All Information:
+
+bash
+Copy code
+./file_info.sh hello.txt
+This command displays all available information about the hello.txt file.
+
+Display Size of the File:
+
+bash
+Copy code
+./file_info.sh --size hello.txt
+This command shows the size of the hello.txt file in bytes.
+
+Display File Permissions:
+
+bash
+Copy code
+./file_info.sh --permissions hello.txt
+This command displays the permissions of the hello.txt file.
+
+Display File Owner:
+
+bash
+Copy code
+./file_info.sh --owner hello.txt
+This command shows the owner of the hello.txt file.
+
+Display Last Modified Time:
+
+bash
+Copy code
+./file_info.sh --last-modified hello.txt
+This command displays the last modification time of the hello.txt file.
+
+Notes:
+Ensure the script file_info.sh has executable permissions (chmod +x file_info.sh).
+Replace <file-name> with the name of the file you want to examine.
+This script provides specific information about the file based on the chosen option.
+
+
